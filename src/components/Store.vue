@@ -1,8 +1,9 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col bg-white text-black">
+      <div class="col bg-dark text-white">
         <a class="navbar-brand">SPORTS STORE</a>
+        <cart-summary />
       </div>
     </div>
     <div class="row">
@@ -22,7 +23,10 @@
 <script>
 import ProductList from "./ProductList.vue";
 import CategoryControls from "./CategoryControls";
+
+import CartSummary from "./CartSummary.vue";
 export default {
-  components: { ProductList, CategoryControls },
+  components: { ProductList, CategoryControls, CartSummary },
 };
-</script>
+</script>,
+    CartSummary
