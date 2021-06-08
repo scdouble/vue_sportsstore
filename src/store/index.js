@@ -4,6 +4,7 @@ import Vuex from "vuex";
 import Axios from "axios";
 import CartModule from "./cart";
 import OrdersModule from "./orders";
+import AuthModule from "./auth";
 
 const baseUrl = "http://localhost:3500";
 const productsUrl = `${baseUrl}/products`;
@@ -25,6 +26,7 @@ export default new Vuex.Store({
   modules: {
     cart: CartModule,
     order: OrdersModule,
+    auth: AuthModule,
   },
   state: {
     categoriesData: [],
